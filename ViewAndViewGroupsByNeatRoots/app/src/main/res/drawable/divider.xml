@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--  Divider is custom made and then we use it in our layout.
+   In divider we use <shape> selector. In that we use <solid> for color
+   and <size> for its width.-->
+
+    <solid
+        android:color="#0D889E"
+        />
+<!--  to assign divider a width we normally use
+     dp as size unit.-->
+    <size
+        android:width="4dp"
+        />
+
+</shape>

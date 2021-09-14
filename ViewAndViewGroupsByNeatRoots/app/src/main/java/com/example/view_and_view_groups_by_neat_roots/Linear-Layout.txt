@@ -1,0 +1,10 @@
+Linear Layout is a View Group and it is subclass of ViewGroup class.
+
+  *** ATTRIBUTES ***
+1- android:gravity = this is used to give inside margin to an element like image and button is also included i guess.
+2- android:layout_weight = this property is used to make responsive layouts. Using this attribute we can divide out layout into different
+   parts.
+
+3- In linear layout-Orientation:Horizontal = the elements are aligned from left to right and are placed side by side.
+4- In linear layout-Orientation:Horizontal = the layout_weight is set to 1 by default.
+

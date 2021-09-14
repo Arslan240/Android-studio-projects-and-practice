@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--  Now we'll going to use nested linear layouts.
+    We'll nest the buttons inside a linear layout with horizontal orientation.
+    Here we do wrap-content because we want to use space below the buttons.-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=""
+        android:orientation="horizontal"
+        android:divider="@drawable/divider"
+        android:showDividers="middle"
+        >
+            <!-- To show dividers we need to use property showDividers.
+             and then we can apply them at different locations. May be
+             in the middle or at the start,end etc.-->
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#FF0000"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#088C7D"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#FF0000"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

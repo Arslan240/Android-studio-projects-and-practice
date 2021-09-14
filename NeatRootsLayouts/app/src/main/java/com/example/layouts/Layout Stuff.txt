@@ -1,0 +1,4 @@
+1- LINEAR LAYOUT
+    Linear Layout is a type of layout in which elements are placed in linear fashion.
+    * android:layuot_weight is used to make responsive layout.
+    * android:gravity is used to assign inner margin to an element.

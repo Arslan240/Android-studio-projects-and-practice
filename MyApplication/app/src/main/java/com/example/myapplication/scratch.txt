@@ -1,0 +1,4 @@
+1. style = alpha property. This property is used to make the text transparent.
+   It's background becomes visible.
+2. gravity = it's for alignment within the element. It can be centerd, horizontal, to the left and a lot of other options.
+3. sp = scale independent pixel --> It is affected for the user's set level of zoom and it will adjust according to other.

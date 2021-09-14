@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Relative layout is ViewGroup which shows different views at relative positions-->
+<!--The view which is at the top in component tree is actually lower in design.
+    The component on the bottom layer shows on the top in actual design -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="false"
+
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/textView2"
+        android:text="TpRit"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:text="670"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textzzview 3" />
+</RelativeLayout>

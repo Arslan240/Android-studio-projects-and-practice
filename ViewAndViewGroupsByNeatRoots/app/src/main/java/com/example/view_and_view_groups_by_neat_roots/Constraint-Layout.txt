@@ -1,0 +1,15 @@
+
+---------------------------------------- CONSTRAINT LAYOUT ---------------------------------------------
+1. Constraint Layout is an advanced layout and it was introduced in 2016.
+2. In constraint layout we can't add nested layouts. It can only hold views and viewGroups but not any layouts.
+3. To add constraints just click and drag the point at the 4 sides of the element and attatch it to the surface.
+4. To delete a constraint."Ctrl + click" the constraint. Or right click on the element and delete all constraints.
+5. Verical and Horizontal Guidelines = These are guidelines just like we have in illustrator to aligh things evenly.
+   We can set guidelines and when we apply constraints to that guidelines.
+
+6. layout_width = match-constraint. When we set the layout width of the element as match constraint.
+   then it's width will shrink or grow based on the constraints.
+
+7. We can create a fb page cover and dp style thingy by setting the upper constraint to the bottom of the upper
+   element and also setting the lower constraint of the lower element to the lower side of the upper object. In this way
+   the lower element's center will be at the bottom of the upper object.

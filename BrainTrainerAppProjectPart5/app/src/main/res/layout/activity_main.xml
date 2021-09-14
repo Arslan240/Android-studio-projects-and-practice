@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="390dp"
+        android:layout_height="307dp"
+        android:layout_marginTop="44dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/ans1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="box1Clicked"
+            android:tag="1"
+            android:text="5"
+            android:textSize="30sp"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/ans2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="box2Clicked"
+            android:tag="2"
+            android:text="3"
+            android:textSize="30sp"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/ans3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="box3Clicked"
+            android:tag="3"
+            android:text="8"
+            android:textSize="30sp"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/ans4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="box4Clicked"
+            android:tag="4"
+            android:text="9"
+            android:textSize="30sp"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="385dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="00 s"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/numbersAdded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:text="3 + 4"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="0 / 0"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/answerFeedback"
+        android:layout_width="154dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/gridLayout"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/gridLayout"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="198dp"
+        android:layout_height="135dp"
+        android:onClick="play"
+        android:text="Go"
+        android:textSize="50sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="playAgain"
+        android:text="Play Again"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/answerFeedback"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/answerFeedback"
+        app:layout_constraintTop_toBottomOf="@+id/answerFeedback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
