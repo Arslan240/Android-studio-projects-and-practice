@@ -30,10 +30,10 @@ import java.net.URLEncoder;
 public class MainActivity extends AppCompatActivity {
 
     //----------------------------------------------------------- API STUFF -------------------------------------------------------------------
-    String api_Key = "a51b2d7605e381417dd60dc7e2ededdf";
+    String api_Key = "apikey";
     String api_call_link_p1 = "https://api.openweathermap.org/data/2.5/weather?q=";
     String city_name = ""; //it will take entry from the user and we'll add all three to make a full apicall link
-    String api_call_link_p3 = "&appid=a51b2d7605e381417dd60dc7e2ededdf";
+    String api_call_link_p3 = "&appid=apikey";
     String api_call_link_full;
 
     //----------------------------------------------------------- LAYOUT STUFF -------------------------------------------------------------------
